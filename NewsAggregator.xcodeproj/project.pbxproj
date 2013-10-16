@@ -14,13 +14,15 @@
 		06251FDA180EFA31007F1958 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06251FD9180EFA31007F1958 /* main.m */; };
 		06251FDE180EFA31007F1958 /* NAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06251FDD180EFA31007F1958 /* NAAppDelegate.m */; };
 		06251FE1180EFA31007F1958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06251FDF180EFA31007F1958 /* Main.storyboard */; };
-		06251FE4180EFA31007F1958 /* NAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06251FE3180EFA31007F1958 /* NAViewController.m */; };
 		06251FE6180EFA31007F1958 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06251FE5180EFA31007F1958 /* Images.xcassets */; };
 		06251FED180EFA31007F1958 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06251FEC180EFA31007F1958 /* XCTest.framework */; };
 		06251FEE180EFA31007F1958 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06251FCD180EFA31007F1958 /* Foundation.framework */; };
 		06251FEF180EFA31007F1958 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06251FD1180EFA31007F1958 /* UIKit.framework */; };
 		06251FF7180EFA31007F1958 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06251FF5180EFA31007F1958 /* InfoPlist.strings */; };
 		06251FF9180EFA31007F1958 /* NewsAggregatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06251FF8180EFA31007F1958 /* NewsAggregatorTests.m */; };
+		06252007180F016D007F1958 /* NATopNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06252006180F016D007F1958 /* NATopNewsTableViewController.m */; };
+		0625200A180F0AEB007F1958 /* NADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06252009180F0AEB007F1958 /* NADetailViewController.m */; };
+		169F4F215F68496DB37896AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF32B5B3269D46F8AEEC8595 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,18 @@
 		06251FDC180EFA31007F1958 /* NAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAAppDelegate.h; sourceTree = "<group>"; };
 		06251FDD180EFA31007F1958 /* NAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAAppDelegate.m; sourceTree = "<group>"; };
 		06251FE0180EFA31007F1958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		06251FE2180EFA31007F1958 /* NAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAViewController.h; sourceTree = "<group>"; };
-		06251FE3180EFA31007F1958 /* NAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAViewController.m; sourceTree = "<group>"; };
 		06251FE5180EFA31007F1958 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		06251FEB180EFA31007F1958 /* NewsAggregatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAggregatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06251FEC180EFA31007F1958 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		06251FF4180EFA31007F1958 /* NewsAggregatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewsAggregatorTests-Info.plist"; sourceTree = "<group>"; };
 		06251FF6180EFA31007F1958 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06251FF8180EFA31007F1958 /* NewsAggregatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsAggregatorTests.m; sourceTree = "<group>"; };
+		06252005180F016D007F1958 /* NATopNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATopNewsTableViewController.h; sourceTree = "<group>"; };
+		06252006180F016D007F1958 /* NATopNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATopNewsTableViewController.m; sourceTree = "<group>"; };
+		06252008180F0AEB007F1958 /* NADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADetailViewController.h; sourceTree = "<group>"; };
+		06252009180F0AEB007F1958 /* NADetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADetailViewController.m; sourceTree = "<group>"; };
+		538B347D9D8149E6BD3334DD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		BF32B5B3269D46F8AEEC8595 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 				06251FD0180EFA31007F1958 /* CoreGraphics.framework in Frameworks */,
 				06251FD2180EFA31007F1958 /* UIKit.framework in Frameworks */,
 				06251FCE180EFA31007F1958 /* Foundation.framework in Frameworks */,
+				169F4F215F68496DB37896AF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +93,7 @@
 				06251FF2180EFA31007F1958 /* NewsAggregatorTests */,
 				06251FCC180EFA31007F1958 /* Frameworks */,
 				06251FCB180EFA31007F1958 /* Products */,
+				538B347D9D8149E6BD3334DD /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +113,7 @@
 				06251FCF180EFA31007F1958 /* CoreGraphics.framework */,
 				06251FD1180EFA31007F1958 /* UIKit.framework */,
 				06251FEC180EFA31007F1958 /* XCTest.framework */,
+				BF32B5B3269D46F8AEEC8595 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,13 +121,15 @@
 		06251FD3180EFA31007F1958 /* NewsAggregator */ = {
 			isa = PBXGroup;
 			children = (
+				06252005180F016D007F1958 /* NATopNewsTableViewController.h */,
+				06252006180F016D007F1958 /* NATopNewsTableViewController.m */,
 				06251FDC180EFA31007F1958 /* NAAppDelegate.h */,
 				06251FDD180EFA31007F1958 /* NAAppDelegate.m */,
 				06251FDF180EFA31007F1958 /* Main.storyboard */,
-				06251FE2180EFA31007F1958 /* NAViewController.h */,
-				06251FE3180EFA31007F1958 /* NAViewController.m */,
 				06251FE5180EFA31007F1958 /* Images.xcassets */,
 				06251FD4180EFA31007F1958 /* Supporting Files */,
+				06252008180F0AEB007F1958 /* NADetailViewController.h */,
+				06252009180F0AEB007F1958 /* NADetailViewController.m */,
 			);
 			path = NewsAggregator;
 			sourceTree = "<group>";
@@ -159,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06251FFC180EFA31007F1958 /* Build configuration list for PBXNativeTarget "NewsAggregator" */;
 			buildPhases = (
+				C945D0A7300D4228922466D1 /* Check Pods Manifest.lock */,
 				06251FC6180EFA31007F1958 /* Sources */,
 				06251FC7180EFA31007F1958 /* Frameworks */,
 				06251FC8180EFA31007F1958 /* Resources */,
+				3512AD831CC94D309AC4997A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,14 +258,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3512AD831CC94D309AC4997A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C945D0A7300D4228922466D1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		06251FC6180EFA31007F1958 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06251FE4180EFA31007F1958 /* NAViewController.m in Sources */,
+				0625200A180F0AEB007F1958 /* NADetailViewController.m in Sources */,
 				06251FDA180EFA31007F1958 /* main.m in Sources */,
 				06251FDE180EFA31007F1958 /* NAAppDelegate.m in Sources */,
+				06252007180F016D007F1958 /* NATopNewsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +423,7 @@
 		};
 		06251FFD180EFA31007F1958 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538B347D9D8149E6BD3334DD /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -389,6 +437,7 @@
 		};
 		06251FFE180EFA31007F1958 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538B347D9D8149E6BD3334DD /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -461,6 +510,7 @@
 				06251FFE180EFA31007F1958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06251FFF180EFA31007F1958 /* Build configuration list for PBXNativeTarget "NewsAggregatorTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +519,7 @@
 				06252001180EFA31007F1958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
