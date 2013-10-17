@@ -1,5 +1,5 @@
 //
-//  NACategoriesTableViewController.h
+//  NACategoryListTableViewController.h
 //  NewsAggregator
 //
 //  Created by Labs on 10/17/13.
@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "AFNetworking.h"
-#import "NACategoryListTableViewController.h"
 
-@interface NACategoriesTableViewController : UITableViewController
+@interface NACategoryListTableViewController : UITableViewController
 
-@property (nonatomic, retain) NSArray *jsonArray;
+@property (nonatomic, retain) NSDictionary *json;
+@property (nonatomic, retain) NSMutableArray *articlesArray;
 @property (nonatomic, retain) NSString *categoryID;
 @property (nonatomic, retain) NSString *categoryName;
-
 @end

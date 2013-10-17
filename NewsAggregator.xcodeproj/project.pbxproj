@@ -23,6 +23,7 @@
 		06252007180F016D007F1958 /* NATopNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06252006180F016D007F1958 /* NATopNewsTableViewController.m */; };
 		0625200A180F0AEB007F1958 /* NADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06252009180F0AEB007F1958 /* NADetailViewController.m */; };
 		06BCF3B3181032F8002F7F34 /* NACategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCF3B2181032F8002F7F34 /* NACategoriesTableViewController.m */; };
+		06BCF3B61810387E002F7F34 /* NACategoryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCF3B51810387E002F7F34 /* NACategoryListTableViewController.m */; };
 		169F4F215F68496DB37896AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF32B5B3269D46F8AEEC8595 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		06252009180F0AEB007F1958 /* NADetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADetailViewController.m; sourceTree = "<group>"; };
 		06BCF3B1181032F8002F7F34 /* NACategoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NACategoriesTableViewController.h; sourceTree = "<group>"; };
 		06BCF3B2181032F8002F7F34 /* NACategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NACategoriesTableViewController.m; sourceTree = "<group>"; };
+		06BCF3B41810387E002F7F34 /* NACategoryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NACategoryListTableViewController.h; sourceTree = "<group>"; };
+		06BCF3B51810387E002F7F34 /* NACategoryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NACategoryListTableViewController.m; sourceTree = "<group>"; };
 		538B347D9D8149E6BD3334DD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF32B5B3269D46F8AEEC8595 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,6 +138,8 @@
 				06252009180F0AEB007F1958 /* NADetailViewController.m */,
 				06BCF3B1181032F8002F7F34 /* NACategoriesTableViewController.h */,
 				06BCF3B2181032F8002F7F34 /* NACategoriesTableViewController.m */,
+				06BCF3B41810387E002F7F34 /* NACategoryListTableViewController.h */,
+				06BCF3B51810387E002F7F34 /* NACategoryListTableViewController.m */,
 			);
 			path = NewsAggregator;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06BCF3B61810387E002F7F34 /* NACategoryListTableViewController.m in Sources */,
 				0625200A180F0AEB007F1958 /* NADetailViewController.m in Sources */,
 				06251FDA180EFA31007F1958 /* main.m in Sources */,
 				06251FDE180EFA31007F1958 /* NAAppDelegate.m in Sources */,

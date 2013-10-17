@@ -1,18 +1,18 @@
 //
-//  NACategoriesTableViewController.m
+//  NACategoryListTableViewController.m
 //  NewsAggregator
 //
 //  Created by Labs on 10/17/13.
 //  Copyright (c) 2013 TeraMoLabs. All rights reserved.
 //
 
-#import "NACategoriesTableViewController.h"
+#import "NACategoryListTableViewController.h"
 
-@interface NACategoriesTableViewController ()
+@interface NACategoryListTableViewController ()
 
 @end
 
-@implementation NACategoriesTableViewController
+@implementation NACategoryListTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -22,6 +22,18 @@
     }
     return self;
 }
+
+//- (id) initWithCategoryName:(NSString *)categoryName withCategoryID:(NSString *)categoryID {
+//    
+//    self = [super init];
+//    
+//    if (self) {
+//        self.categoryID = categoryID;
+//        self.categoryName = categoryName;
+//    }
+//    
+//    return self;
+//}
 
 - (void)viewDidLoad
 {
@@ -33,17 +45,18 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.title = @"Categories";
+    self.title = self.categoryName;
     
+    NSString *urlAsString = [NSString stringWithFormat:@"http://api.feedzilla.com/v1/categories/%@/articles.json",self.categoryID];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://api.feedzilla.com/v1/categories.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        self.jsonArray = (NSArray *)responseObject;
-//        NSLog(@"JSON: %@", self.jsonArray[0][@"category_id"]);
+    [manager GET:urlAsString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        self.json = (NSDictionary *)responseObject;
+        self.articlesArray = (NSMutableArray *)self.json[@"articles"];
+//        NSLog(@"JSON: %@", self.json);
         [self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        //        NSLog(@"Error: %@", error);
+        NSLog(@"Error: %@", error);
     }];
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,17 +76,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.jsonArray count];
+    return [self.articlesArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"CategoriesCell";
+    static NSString *CellIdentifier = @"CategoryListCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = self.jsonArray[indexPath.row][@"english_category_name"];
-//    cell.detailTextLabel.text = self.jsonArray[indexPath.row][@"category_id"];
+    NSDictionary *article = [self.articlesArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = article[@"title"];
+    cell.detailTextLabel.text = article[@"publish_date"];
     
     return cell;
 }
@@ -117,7 +131,7 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
@@ -125,15 +139,8 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
-    UITableViewCell *selectedCell = (UITableViewCell *)sender;
-    NSInteger selectedRow = [self.tableView indexPathForCell:selectedCell].row;
-    self.categoryID = self.jsonArray[selectedRow][@"category_id"];
-    self.categoryName = self.jsonArray[selectedRow][@"english_category_name"];
-    NACategoryListTableViewController *dVC = [segue destinationViewController];
-    [dVC setCategoryID:self.categoryID];
-    [dVC setCategoryName:self.categoryName];
 }
 
+ */
 
 @end
