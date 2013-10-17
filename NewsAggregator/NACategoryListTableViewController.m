@@ -131,7 +131,6 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
@@ -139,8 +138,13 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    UITableViewCell *selectedCell = (UITableViewCell *)sender;
+    NSInteger selectedRow = [self.tableView indexPathForCell:selectedCell].row;
+    NSDictionary *article = self.articlesArray[selectedRow];
+    
+    NADetailViewController *dVC = [segue destinationViewController];
+    [dVC setArticle:article];
 }
 
- */
 
 @end
