@@ -34,16 +34,44 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.title = @"Top News";
+    self.navigationItem.rightBarButtonItem.title = @"";
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:@"http://api.feedzilla.com/v1/categories/26/articles.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.json = (NSDictionary *)responseObject;
         self.articlesArray = (NSMutableArray *)self.json[@"articles"];
-//        NSLog(@"JSON: %@", self.json);
+
         [self.tableView reloadData];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 //        NSLog(@"Error: %@", error);
     }];
+    
+    if ([CLLocationManager locationServicesEnabled]) {
+        CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+        [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+        [locationManager startUpdatingLocation];
+        [locationManager setDelegate:self];
+        
+        NSString *url = [NSString stringWithFormat:@"https://api.forecast.io/forecast/6a72eeee2b113ec392e9bd646130de14/%f,%f",locationManager.location.coordinate.latitude,locationManager.location.coordinate.longitude];
+        
+        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            
+            NSDictionary *json = (NSDictionary *)responseObject;
+            
+            int tempMin = [json[@"daily"][@"data"][0][@"temperatureMin"] integerValue];
+            int tempMax = [json[@"daily"][@"data"][0][@"temperatureMax"] integerValue];
+            NSString *temp = [NSString stringWithFormat:@"%d ºC/ %d ºC", (tempMax-32)*5/9, (tempMin-32)*5/9];
+            self.navigationItem.rightBarButtonItem.title = temp;
+            
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Error: %@", error);
+        }];
+    }
+    
+
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -65,7 +65,9 @@
                             <outlet property="delegate" destination="tUg-vh-6Tw" id="dFk-TS-qWU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9di-NR-cOO"/>
+                    <navigationItem key="navigationItem" id="9di-NR-cOO">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="ahv-uf-0tX"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6i-M1-uKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +95,9 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="GCB-qj-Rbg"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="GCB-qj-Rbg">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="dIb-X4-sLf"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPY-Nb-Ydl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -302,6 +306,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="WgS-x6-W1F"/>
+        <segue reference="sd7-aE-7OS"/>
     </inferredMetricsTieBreakers>
 </document>

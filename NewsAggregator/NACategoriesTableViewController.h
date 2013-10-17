@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import "AFNetworking.h"
 #import "NACategoryListTableViewController.h"
 
-@interface NACategoriesTableViewController : UITableViewController
+@interface NACategoriesTableViewController : UITableViewController <CLLocationManagerDelegate>
 
 @property (nonatomic, retain) NSArray *jsonArray;
 @property (nonatomic, retain) NSString *categoryID;
