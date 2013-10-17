@@ -24,6 +24,8 @@
 		0625200A180F0AEB007F1958 /* NADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06252009180F0AEB007F1958 /* NADetailViewController.m */; };
 		06BCF3B3181032F8002F7F34 /* NACategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCF3B2181032F8002F7F34 /* NACategoriesTableViewController.m */; };
 		06BCF3B61810387E002F7F34 /* NACategoryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCF3B51810387E002F7F34 /* NACategoryListTableViewController.m */; };
+		06BCF3BA18105AB8002F7F34 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BCF3B918105AB8002F7F34 /* news.png */; };
+		06BCF3BC18105AEC002F7F34 /* categories.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BCF3BB18105AEC002F7F34 /* categories.png */; };
 		169F4F215F68496DB37896AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF32B5B3269D46F8AEEC8595 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		06BCF3B2181032F8002F7F34 /* NACategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NACategoriesTableViewController.m; sourceTree = "<group>"; };
 		06BCF3B41810387E002F7F34 /* NACategoryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NACategoryListTableViewController.h; sourceTree = "<group>"; };
 		06BCF3B51810387E002F7F34 /* NACategoryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NACategoryListTableViewController.m; sourceTree = "<group>"; };
+		06BCF3B918105AB8002F7F34 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
+		06BCF3BB18105AEC002F7F34 /* categories.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = categories.png; sourceTree = "<group>"; };
 		538B347D9D8149E6BD3334DD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF32B5B3269D46F8AEEC8595 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,6 +99,8 @@
 		06251FC1180EFA31007F1958 = {
 			isa = PBXGroup;
 			children = (
+				06BCF3BB18105AEC002F7F34 /* categories.png */,
+				06BCF3B918105AB8002F7F34 /* news.png */,
 				06251FD3180EFA31007F1958 /* NewsAggregator */,
 				06251FF2180EFA31007F1958 /* NewsAggregatorTests */,
 				06251FCC180EFA31007F1958 /* Frameworks */,
@@ -252,6 +258,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06BCF3BA18105AB8002F7F34 /* news.png in Resources */,
+				06BCF3BC18105AEC002F7F34 /* categories.png in Resources */,
 				06251FE6180EFA31007F1958 /* Images.xcassets in Resources */,
 				06251FD8180EFA31007F1958 /* InfoPlist.strings in Resources */,
 				06251FE1180EFA31007F1958 /* Main.storyboard in Resources */,

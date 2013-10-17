@@ -8,7 +8,7 @@
         <scene sceneID="EoZ-to-ZAj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OD9-F3-zEo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Top News" id="M9O-FV-nOO"/>
+                    <tabBarItem key="tabBarItem" title="Top News" image="news.png" id="M9O-FV-nOO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ld9-fT-7Nc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -268,7 +268,7 @@
         <scene sceneID="a0t-3z-RxM">
             <objects>
                 <navigationController definesPresentationContext="YES" id="o2q-Hl-gmd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Categories" id="hFF-EE-UXt"/>
+                    <tabBarItem key="tabBarItem" title="Categories" image="categories.png" id="hFF-EE-UXt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TgS-KS-1NW">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -300,6 +300,10 @@
             <point key="canvasLocation" x="481" y="31"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="categories.png" width="32" height="32"/>
+        <image name="news.png" width="30" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
