@@ -22,6 +22,7 @@
 		06251FF9180EFA31007F1958 /* NewsAggregatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06251FF8180EFA31007F1958 /* NewsAggregatorTests.m */; };
 		06252007180F016D007F1958 /* NATopNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06252006180F016D007F1958 /* NATopNewsTableViewController.m */; };
 		0625200A180F0AEB007F1958 /* NADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06252009180F0AEB007F1958 /* NADetailViewController.m */; };
+		06BCF3B3181032F8002F7F34 /* NACategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCF3B2181032F8002F7F34 /* NACategoriesTableViewController.m */; };
 		169F4F215F68496DB37896AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF32B5B3269D46F8AEEC8595 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		06252006180F016D007F1958 /* NATopNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATopNewsTableViewController.m; sourceTree = "<group>"; };
 		06252008180F0AEB007F1958 /* NADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADetailViewController.h; sourceTree = "<group>"; };
 		06252009180F0AEB007F1958 /* NADetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADetailViewController.m; sourceTree = "<group>"; };
+		06BCF3B1181032F8002F7F34 /* NACategoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NACategoriesTableViewController.h; sourceTree = "<group>"; };
+		06BCF3B2181032F8002F7F34 /* NACategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NACategoriesTableViewController.m; sourceTree = "<group>"; };
 		538B347D9D8149E6BD3334DD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF32B5B3269D46F8AEEC8595 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,6 +133,8 @@
 				06251FD4180EFA31007F1958 /* Supporting Files */,
 				06252008180F0AEB007F1958 /* NADetailViewController.h */,
 				06252009180F0AEB007F1958 /* NADetailViewController.m */,
+				06BCF3B1181032F8002F7F34 /* NACategoriesTableViewController.h */,
+				06BCF3B2181032F8002F7F34 /* NACategoriesTableViewController.m */,
 			);
 			path = NewsAggregator;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				06251FDA180EFA31007F1958 /* main.m in Sources */,
 				06251FDE180EFA31007F1958 /* NAAppDelegate.m in Sources */,
 				06252007180F016D007F1958 /* NATopNewsTableViewController.m in Sources */,
+				06BCF3B3181032F8002F7F34 /* NACategoriesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
